@@ -1,0 +1,9 @@
+(executable
+ (name assembler)
+ (libraries base parsexp sexp_pretty stdio angstrom)
+ (preprocess (pps ppx_jane ppx_regexp)))
+
+
+ (env
+  (dev
+    (flags (:standard -warn-error -A))))
